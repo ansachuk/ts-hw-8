@@ -5,10 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Video playback</title>
-		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<script>
+			if (global === undefined) {
+				var global = window;
+			}
+		</script>
 	</head>
 	<body>
-		<p><a href="index.html">Go back</a></p>
+		<p><a href="../../index.html">Go back</a></p>
 
 		<iframe
 			id="vimeo-player"
@@ -20,6 +25,6 @@
 			allow="autoplay; encrypted-media"
 		></iframe>
 
-		<script src="js/02-video.ts" type="module"></script>
+		<script src="../ts/02-video.ts" type="module"></script>
 	</body>
 </html>
